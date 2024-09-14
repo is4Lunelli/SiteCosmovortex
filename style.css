@@ -1,0 +1,197 @@
+body {
+    color: white;
+    font-family: OCR A Std, monospace;
+    background: rgb(26, 26, 26);
+    margin: 0;
+    margin-top:50px;
+}
+
+/*ohome, contato e quemsomosnos*/
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 1.6%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.gradiente {
+    background: linear-gradient(90deg, rgba(124,4,166,1) 0%, rgba(46,41,173,1) 29%, rgba(30,30,179,1) 39%, rgba(14,13,111,1) 58%, rgba(0,0,0,1) 100%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/*foto e escrita cosmovortex*/
+
+#fotoescrita{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    #fotoescrita {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+header{
+    margin-top: 15%;
+}
+
+header img {
+    max-width: 10%;
+    max-height: 10%;
+    border-radius: 15%;
+    max-width: 80%;
+}
+
+header .caixa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+ }
+ 
+ header h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 5%;
+    align-items: center;
+    font-size: calc(2rem + 2vw);
+ }
+
+ /*faz img ficar com borda curvada*/
+
+.border{
+    border-radius: 15%;
+}
+
+/*caixa que ficara na foto do cosmovortex
+e voce pode add em qualquer elemento*/
+
+.caixa{
+    position: relative;
+    padding: 0%;
+    border-radius: 15%;
+    justify-content: center;
+ }
+ .caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(80% + 20px);
+    height: calc(100% + 20px);
+    background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
+    background-size: 300%;
+    border-radius: 15%;
+    animation: AnimarBorda 6s Linear infinite;
+ }
+ 
+ @keyframes AnimarBorda {
+    0% {
+       background-position: 0;
+    }
+       100% {
+          background-position: 300%;
+    }
+ }
+ 
+ .caixa::after{
+    filter: blur(50px);
+ }
+
+ /*subtitulo*/
+
+h2{
+    margin-top: 5%;
+}
+
+h3 {
+    margin-top: 0%;
+    font-size: 100%;
+}
+
+/*botao*/
+
+button {
+    background-color: #551A8B;
+    color: white;
+    border: none;
+    padding: 1.25rem 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-size: 1.25rem;
+ }
+ 
+ button:hover {
+    background-color: #9d00ff; 
+ }
+
+ #sobre {
+    aspect-ratio: 16 / 9;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #e100ff;
+    display: none;
+    background-image: url(./img/img/resumo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgresumo img {
+   max-width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+/*centro de tudo*/
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*degrade*/
+
+.espaco {
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     mask-image: linear-gradient(to bottom, transparent 25%, black 100%);
+     background-image: url(./img/img/espaco.jpeg);
+ }
+
+ .mescla{
+    margin-top: -10%;
+    width: 100%;
+ }
+
+h4 {
+    font-size: 1.50rem;
+    margin-top: -120%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
