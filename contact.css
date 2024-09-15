@@ -52,10 +52,15 @@ h2 {
     padding: 5%;
 }
 
+h3{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
     .caixa {
     position: relative;
-    width: 400px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     color: white;
     background-color: black;
     display: flex;
@@ -63,7 +68,7 @@ h2 {
     align-items: center;
     border-radius: 3px;
     text-transform: uppercase;
-    padding: 0%;
+    padding: 2%;
     }
     
     .caixa::before, .caixa::after {
@@ -71,7 +76,7 @@ h2 {
     position: absolute;
     z-index: -1;
     position: absolute;
-    width: calc(135% + 10px);
+    width: calc(100% + 10px);
     height: calc(100% + 10px);
     background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
     background-size: 300%;
