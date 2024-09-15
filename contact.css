@@ -52,12 +52,6 @@ h2 {
     padding: 5%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-    
     .caixa {
     position: relative;
     width: 400px;
@@ -77,7 +71,7 @@ h2 {
     position: absolute;
     z-index: -1;
     position: absolute;
-    width: calc(200% + 10px);
+    width: calc(135% + 10px);
     height: calc(100% + 10px);
     background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
     background-size: 300%;
@@ -103,7 +97,5 @@ h2 {
         margin-top: 10%;
         justify-content: center;
         align-items: center;
-        margin-right: 10%;
-        margin-left: 10%
         background: black
     }
