@@ -47,7 +47,6 @@ h1 {
 }
 
 h2 {
-    margin-left: 7%;
     margin-right: 7%;
     padding: 5%;
 }
@@ -55,6 +54,11 @@ h2 {
 h3{
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+h4{
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
     .caixa {
