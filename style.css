@@ -142,10 +142,6 @@ button {
     margin-bottom: 2%;
     font-size: 1.25rem;
  }
- 
- button:hover {
-    background-color: #9d00ff; 
- }
 
  #sobre {
     aspect-ratio: 16 / 9;
