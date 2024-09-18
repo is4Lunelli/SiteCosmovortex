@@ -39,20 +39,23 @@ a {
 /*foto e escrita cosmovortex*/
 
 #fotoescrita{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual */
+    gap: 2rem; /* Espaçamento entre as colunas */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-items: center; /* Centraliza horizontalmente os itens */
+    margin-top: 5%;
 }
 
 @media (max-width: 768px) {
     #fotoescrita {
-        align-items: center;
+        grid-template-columns: 1fr; /* Uma coluna (empilha o texto e a imagem) */
         text-align: center;
     }
 }
 
 header{
-    margin-top: 25%;
+    margin-top: 15%;
 }
 
 header img {
@@ -60,6 +63,8 @@ header img {
     max-height: 10%;
     border-radius: 15%;
     max-width: 80%;
+    margin: 0; /* Remove margens laterais */
+    text-align: center;
 }
 
 header .caixa {
@@ -75,7 +80,7 @@ header .caixa {
     text-align: left;
     margin-left: 5%;
     align-items: center;
-    font-size: calc(2rem + 2vw);
+    font-size: calc(3.5rem + 2vw);
  }
 
  /*faz img ficar com borda curvada*/
@@ -122,11 +127,15 @@ e voce pode add em qualquer elemento*/
 
 h2{
     margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 h3 {
-    margin-top: 15%;
-    font-size: 100%;
+    margin-top: 12%;
+    font-size: 1.5rem;
 }
 
 /*botao*/
@@ -174,20 +183,18 @@ button {
 
 .espaco {
      width: 100%;
-     height: 100%;
-     z-index: -1;
-     mask-image: linear-gradient(to bottom, transparent 25%, black 100%);
+     mask-image: linear-gradient(to bottom, transparent 1%, black 20%);
      background-image: url(./img/img/espaco.jpeg);
  }
 
- .mescla{
-    margin-top: -10%;
-    width: 100%;
- }
 
-h4 {
-    font-size: 1.50rem;
-    margin-top: -130%;
-    margin-left: 10%;
-    margin-right: 10%;
+.mescla-texto {
+    position: absolute;
+    margin-top: -120%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align: center;
 }
