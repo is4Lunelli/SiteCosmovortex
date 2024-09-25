@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 body {
     color: white;
     font-family: OCR A Std, monospace;
-    background: rgb(26, 26, 26);
+    background: rgb(4, 15, 31);
     margin: 0;
     margin-top:50px;
 }
@@ -55,12 +59,11 @@ a {
 }
 
 header{
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 header img {
-    max-width: 10%;
-    max-height: 10%;
+    max-height: 80%;
     border-radius: 15%;
     max-width: 80%;
     margin: 0; /* Remove margens laterais */
@@ -75,12 +78,18 @@ header .caixa {
  }
  
  header h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     text-align: left;
+    color: rgb(4, 15, 31);
     margin-left: 5%;
     align-items: center;
-    font-size: calc(3.5rem + 2vw);
+    font-size: calc(5.5rem + 2vw);
+    background: linear-gradient(90deg, rgb(201, 2, 191), #a318ff, rgb(17, 0, 255), rgb(0, 140, 255), rgb(111, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .04em transparent;
  }
 
  /*faz img ficar com borda curvada*/
@@ -171,6 +180,10 @@ button {
    object-fit: contain;
 }
 
+/*botao formulario*/
+
+
+
 /*centro de tudo*/
 
 .center {
@@ -197,4 +210,21 @@ button {
     font-size: 1.7rem; /* Tamanho da fonte */
     font-weight: bold;
     text-align: center; /* Centraliza o texto */
+    justify-content: center;
+}
+
+/*fundo espaco*/
+
+h4 {
+    font-weight: bold;
+    font-size: 70%;
+}
+
+h5{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 60px rgba(255, 255, 255, 0.5);
 }
