@@ -87,7 +87,7 @@ header .caixa {
     color: rgb(4, 15, 31);
     margin-left: 5%;
     align-items: center;
-    font-size: calc(3rem + 3vw);
+    font-size: calc(3rem + 2vw);
     background: linear-gradient(90deg, rgb(201, 2, 191), #a318ff, rgb(17, 0, 255), rgb(0, 140, 255), rgb(111, 0, 255));
     -webkit-background-clip: text;
     -webkit-text-stroke: .04em transparent;
