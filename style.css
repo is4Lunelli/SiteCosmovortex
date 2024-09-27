@@ -7,6 +7,7 @@ body {
     font-family: OCR A Std, monospace;
     background: rgb(4, 15, 31);
     margin: 0;
+    padding: 0%;
     margin-top:50px;
 }
 
@@ -86,7 +87,7 @@ header .caixa {
     color: rgb(4, 15, 31);
     margin-left: 5%;
     align-items: center;
-    font-size: calc(2.9rem + 2vw);
+    font-size: calc(3rem + 2vw);
     background: linear-gradient(90deg, rgb(201, 2, 191), #a318ff, rgb(17, 0, 255), rgb(0, 140, 255), rgb(111, 0, 255));
     -webkit-background-clip: text;
     -webkit-text-stroke: .04em transparent;
@@ -183,6 +184,9 @@ button {
 /*botao formulario*/
 
 
+/*botao saiba mais formulario*/
+
+
 
 /*centro de tudo*/
 
@@ -213,11 +217,11 @@ button {
     justify-content: center;
 }
 
-/*fundo espaco*/
-
 h4 {
     font-weight: bold;
     font-size: 70%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 h5{
@@ -227,4 +231,83 @@ h5{
     font-style: normal;
     font-size: 2.5rem;
     text-shadow: 3px 3px 60px rgba(255, 255, 255, 0.5);
+}
+
+/*fundo espaco*/
+
+.fundoespaco{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco2{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco3{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco4{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco5{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco6{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco7{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
 }
