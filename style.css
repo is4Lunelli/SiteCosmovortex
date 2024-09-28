@@ -160,7 +160,7 @@ button {
     justify-content: center;
     margin-bottom: 2%;
     font-size: 1.25rem;
- }
+}
 
  #sobre {
     aspect-ratio: 16 / 9;
@@ -183,21 +183,19 @@ button {
 
 /*botao formulario*/
 
-button {
-    background-color: #551A8B;
-    color: white;
-    border: none;
-    padding: 1.25rem 2.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    justify-content: center;
-    margin-bottom: 2%;
-    font-size: 1.25rem;
- }
+
 
 /*botao saiba mais formulario*/
 
-
+ #porquepesquisa {
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid #7700ff;
+    color: #b700ff;
+    background-color: #000000;
+    display: none;
+}
 
 /*centro de tudo*/
 
