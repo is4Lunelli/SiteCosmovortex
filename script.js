@@ -8,5 +8,5 @@ function toggle(el) {
 }
 
 function abrirFormulario() {
-  window.open('https://docs.google.com/forms/d/e/1FAIpQLSc_Un9gOOgdoD7qdfRLD6d-9vAkmYWXOJDpi2ZxRIf_m8oqEw/viewform?usp=sf_link', '_blank');
+  window.open('https://forms.gle/uJrAhxfpXESP5ygp9', '_blank');
 }
