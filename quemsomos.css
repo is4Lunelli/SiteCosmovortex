@@ -3,6 +3,7 @@ body {
     padding: 0;
     width: 100%;
     background-size: cover; /* Cobre todo o contêiner */
+    background-color: rgb(4, 15, 31);
 }
 
 .imgboa{
@@ -40,4 +41,108 @@ ul {
 a {
     color: white;
     text-decoration: none;
+}
+
+header{
+    margin-top: 10%;
+}
+
+header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: rgb(4, 15, 31);
+    align-items: center;
+    font-size: calc(2rem + 2vw);
+    background: linear-gradient(90deg, rgb(201, 2, 191), #a318ff, rgb(17, 0, 255), rgb(0, 140, 255), rgb(111, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .04em transparent;
+    text-align: center;
+}
+
+h2{
+    font-family: OCR A Std, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ .fotoperfil {
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+ }
+
+main{
+    text-align: center;
+    background-image: url(./img/img/espaco.jpeg);
+}
+
+.caixa{
+    position: relative;
+    height: 315px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 0;
+ }
+
+.content::before, .caixa::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
+    z-index: 0;
+    background-size: 300%;
+    border-radius: 2%;
+    animation: AnimarBorda 6s Linear infinite;
+}
+
+@keyframes AnimarBorda {
+    0% {
+       background-position: 0;
+    }
+       100% {
+          background-position: 300%;
+    }
+ }
+ 
+ .caixa::after{
+    filter: blur(50px);
+}
+
+.marginimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    font-family: OCR A Std, monospace;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    z-index: 1;
+    background-color: black;
+}
+
+.espaco {
+    width: 100%;
+    mask-image: linear-gradient(to bottom, transparent 1%, black 20%);
+    background-image: url(./img/img/espaco.jpeg);
+    z-index: -1;
+}
+
+.mescla-texto {
+    position: absolute;
+    margin-top: -120%;
 }
