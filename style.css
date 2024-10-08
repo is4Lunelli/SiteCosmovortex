@@ -139,7 +139,7 @@ h2{
     margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -192,7 +192,19 @@ button {
     margin-left: 5%;
     margin-right: 5%;
     border: 2px solid #7700ff;
-    color: #b700ff;
+    color: #bcbbbc;
+    background-color: #000000;
+    display: none;
+}
+
+/*botao de conquista*/
+
+#conquistas {
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid #7700ff;
+    color: #bcbbbc;
     background-color: #000000;
     display: none;
 }
@@ -229,7 +241,7 @@ button {
 h4 {
     font-weight: bold;
     font-size: 70%;
-    margin-top: 5%;
+    margin-top: 15%;
     margin-bottom: 2%;
 }
 
@@ -238,7 +250,7 @@ h5{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-shadow: 3px 3px 60px rgba(255, 255, 255, 0.5);
 }
 
@@ -319,4 +331,41 @@ h5{
     display: block; /* Garante que a div se comporte como um bloco */
     margin: 0;
     margin-top: -2%;
+}
+
+.fundoespaco8{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco9{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+.fundoespaco10{
+    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: repeat-y;
+    padding: 100px;
+    display: block; /* Garante que a div se comporte como um bloco */
+    margin: 0;
+    margin-top: -2%;
+}
+
+h6{
+    text-align: left;
 }
