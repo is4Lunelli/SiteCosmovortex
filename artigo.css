@@ -1,0 +1,110 @@
+body {
+    color: white;
+    font-family: OCR A Std, monospace;
+    background: rgb(4, 15, 31);
+    margin: 0;
+    margin-top: 50px;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 1.6%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+.gradiente {
+    background: linear-gradient(90deg, rgba(124,4,166,1) 0%, rgba(46,41,173,1) 29%, rgba(30,30,179,1) 39%, rgba(14,13,111,1) 58%, rgba(0,0,0,1) 100%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 10%;
+}
+
+h2 {
+    margin-right: 7%;
+    padding: 5%;
+}
+
+h3{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h4{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+    .caixa {
+    position: relative;
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    text-transform: uppercase;
+    padding: 2%;
+    }
+    
+    .caixa::before, .caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
+    background-size: 300%;
+    border-radius: 8px;
+    animation: AnimarBorda 8s linear infinite;
+    }
+    
+    @keyframes AnimarBorda {
+    0% {
+    background-position: 0;
+    }
+    100% {
+    background-position: 300%;
+    }
+    }
+    
+    .caixa::after{
+    filter: blur(50px);
+    }
+
+    header{
+        display: flex;
+        margin-top: 10%;
+        justify-content: center;
+        align-items: center;
+        background: black
+    }
