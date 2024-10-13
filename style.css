@@ -28,7 +28,6 @@ a:hover{
 }
 
 nav {
-    position: fixed;
     box-shadow: 0px 3px 10px #000000;
     display: flex;
     position: relative;
@@ -42,7 +41,7 @@ nav {
 .nav-list{
     list-style: none;
     display: flex;
-    margin-top: -3%;
+    margin-top: -3;
 }
 
 .nav-list li{
