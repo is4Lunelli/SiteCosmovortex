@@ -24,7 +24,6 @@ a:hover{
 }
 
 nav {
-    position: fixed;
     box-shadow: 0px 3px 10px #000000;
     display: flex;
     position: relative;
@@ -38,7 +37,7 @@ nav {
 .nav-list{
     list-style: none;
     display: flex;
-    margin-top: -3%;
+    margin-top: -3;
 }
 
 .nav-list li{
@@ -113,7 +112,7 @@ nav {
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
-
+  
 h1 {
     margin-top: 10%;
     font-family: "Montserrat", sans-serif;
