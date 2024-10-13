@@ -8,17 +8,25 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <body>
-    <nav>
-        <div class="gradiente">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quemsomos.html">Quem somos</a></li>
-                <li><a href="contact.html">Contato</a></li>
-                <li><a href="artigos.html">Docs</a></li>
-            </ul>
-        </div>
-    </nav>
+
     <header>
+        <nav>
+            <a class="logo" href="/">Cosmovórtex</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="manual.html">Manual</a></li>
+            </ul>
+        </nav>
+    </header>
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
@@ -32,7 +40,6 @@
             </div>
             </div>
         </section>
-    </header>
     </div>
         <div class="center">
             <h2>
@@ -58,12 +65,21 @@
                 No cabeçário da página, estão localizados os nossos
                 contatos, os quais poderão ser enviadas mensagens
                 de dúvidas.
-                Ao final da página, há um vídeo sobre a explicação
+                Abaixo há um vídeo sobre a explicação
                 e a funcionalidade do projeto.
             </p>
         </h4>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Py0RqaD5YyA?si=--3CvRy9GyJpojB0" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+            </iframe>
+        </div>
         <h5>
-            Pressione o botão abaixo se você quer contribuir com a nossa pesquisa-ação:
+            Pressione o botão abaixo se você quer contribuir com a nossa pesquisa-ação após ver o vídeo:
         </h5>
         <section id="button">
             <button class="botao" onclick="abrirFormulario()">ABRIR FORMULÁRIO</button>
@@ -118,26 +134,18 @@
                                     <br>
                                     <br>
                                 <li>
-                                    MOSTRA CIENTÍFICA SESI PR. Vamos ter a oportunidade de
+                                    MOSTRA CIENTÍFICA SESI PR. Tivemos a oportunidade de
                                     competir com outros projetos de iniciação científica na
                                     EXPOTRADE. O evento acontece em conjunto com equipes de robótica,
-                                    e é organizado pelo Sesi. O evento acontecerá nos dias 10 e 11 
-                                    de novembro de 2024.
+                                    e é organizado pelo Sesi. O evento aconteceu nos dias 10 e 11 
+                                    de novembro de 2024, e foi uma boa oportunidade para aprimorarmos
+                                    nossas apresentações.
                                 </li>
                                 </p>
                             </h6>
                     </div>
                     </div>
                     <br>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/Py0RqaD5YyA?si=--3CvRy9GyJpojB0" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                        </iframe>
-                    </div>
                 </div>
             </div>
     </div>
@@ -162,6 +170,7 @@
     <div class="fundoespaco10">
     </div>
 <script src="script.js" defer></script>
+<script src="mobile-navbar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
