@@ -227,3 +227,18 @@ h3{
     position: absolute;
     margin-top: -120%;
 }
+
+@media (min-width: 768px) {
+    img{
+      margin-top: 0%;
+    }
+
+    h2{
+      margin-bottom: -15%;
+      z-index: 3;
+    }
+
+    .mescla-texto {
+      z-index: 0;
+  }
+}
