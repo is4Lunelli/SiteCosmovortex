@@ -168,6 +168,7 @@ section img {
     align-items: center;
     justify-content: center;
     text-align: right;
+    z-index: 1;
  }
  
 section h1 {
@@ -320,8 +321,10 @@ button {
 
 .espaco {
      width: 100%;
+     position: relative;
      mask-image: linear-gradient(to bottom, transparent 1%, black 20%);
      background-image: url(./img/img/espaco.jpeg);
+     z-index: -1;
  }
 
 
@@ -342,6 +345,7 @@ h4 {
     font-size: 70%;
     margin-top: 15%;
     margin-bottom: 2%;
+    background: #000;
 }
 
 h5{
@@ -353,116 +357,19 @@ h5{
     text-shadow: 3px 3px 60px rgba(255, 255, 255, 0.5);
 }
 
-/*fundo espaco*/
-
-.fundoespaco{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
+.logosesi {
+    border-radius: 0%;
 }
 
-.fundoespaco2{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
+.logosenai {
+    
 }
 
-.fundoespaco3{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco4{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco5{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco6{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco7{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco8{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco9{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
-}
-
-.fundoespaco10{
-    background-image: url(./img/img/espaco.jpeg); /* Coloque aqui o caminho da imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra toda a área do container */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: repeat-y;
-    padding: 100px;
-    display: block; /* Garante que a div se comporte como um bloco */
-    margin: 0;
-    margin-top: -2%;
+@media (min-width: 769px) {
+    .container {
+        max-height: calc(100vh * 4);
+        overflow-y: scroll;
+    }
 }
 
 h6{
@@ -484,4 +391,118 @@ h6{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media (min-width: 768px) {
+    h2{
+        margin-top: 5%;
+    }
+
+    h3{
+        margin-top: 5%;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        overflow: hidden;
+        background: #000; /* Fundo preto enquanto carrega */
+        margin: 0 auto; /* Centraliza o vídeo */
+    }
+}
+
+.fotoprof{
+    height: 300px;
+    width: 300px;
+    z-index: 1;
+    border-radius: 0%;
+}
+
+.caixa1{
+    position: relative;
+    height: 315px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    z-index: 0;
+ }
+
+.content::before, .caixa1::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    background: linear-gradient(45deg, #1100ff, #0051ff, #0004ff, #001aff, #a200ff, #d610d6, #a200ff, #2f00ff, #0011ff, #1100ff, #a200ff, #1100ff);
+    z-index: 0;
+    background-size: 300%;
+    border-radius: 2%;
+    animation: AnimarBorda 6s Linear infinite;
+}
+
+@keyframes AnimarBorda {
+    0% {
+       background-position: 0;
+    }
+       100% {
+          background-position: 300%;
+    }
+ }
+ 
+ .caixa1::after{
+    filter: blur(50px);
+}
+
+.marginimg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+h4{
+    margin-top: -3%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.prof{
+    margin: 1%;
+    text-shadow: 3px 3px 60px rgba(255, 255, 255, 0.5);
+}
+
+.email{
+    margin: 0;
+}
+
+.preto{
+    background-color: #000;
+}
+
+.espaco1 {
+    width: 100%;
+    position: relative;
+    margin-top: -2%;
+    background-image: url(./img/img/espaco.jpeg);
+    z-index: -1;
+}
+
+@media (max-width: 1300px) {
+    .espaco2 {
+        width: 100%;
+        position: relative;
+        margin-top: -2%;
+        mask-image: linear-gradient(to top, transparent 1%, black 50%);
+        background-image: url(./img/img/espaco.jpeg);
+        z-index: -1;
+    }
+}
+@media (min-width: 1300px) {
+.espaco2 {
+    height: 0px;
+    position: relative;
+    z-index: -1;
+}
 }
